@@ -1,0 +1,32 @@
+git clone https://m48kumar@gerrit.ext.net.nokia.com/gerrit/a/Sage/SAGE && (cd SAGE && curl -Lo `git rev-parse --git-dir`/hooks/commit-msg https://m48kumar@gerrit.ext.net.nokia.com/gerrit/tools/hooks/commit-msg; chmod +x `git rev-parse --git-dir`/hooks/commit-msg)
+
+git branch
+
+#to checkout the develop folder and codes
+git checkout develop
+
+#to checkout the etl folder and codes
+git checkout etl
+
+#to chekcout the etl as a separate branch
+git checkout -b etl
+
+#to see git branch and detail
+git branch -a
+
+#to change the active branch from etl to develop
+git checkout develop
+
+#bring the latest details from the server
+git fetch --purne --all
+
+#history details
+git log
+
+#status 
+git status
+
+#pulling from server
+git pull
+
+
